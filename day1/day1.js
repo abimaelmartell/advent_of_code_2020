@@ -1,6 +1,6 @@
 fs = require('fs');
 
-const content = fs.readFileSync('./input.txt', 'utf8');
+const content = fs.readFileSync(__dirname + '/input.txt', 'utf8');
 const numbers = content
     .split("\n")
     .map((line) => parseInt(line))
@@ -15,6 +15,8 @@ for (let i = 0; i < numbers.length; i++) {
 
     if (mem[missing]) {
         console.log(missing * numbers[i]);
+
+        return;
     } else {
         mem[numbers[i]] = i;
     }
