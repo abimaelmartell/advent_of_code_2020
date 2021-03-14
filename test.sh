@@ -21,4 +21,9 @@ expect day1/day1_02.js "295668576"
 expect day2/day2.js "474"
 expect day2/day2_02.js "745"
 
+# Day 3
+
+expect day3/day3.js "159"
+expect day3/day3_02.js "6419669520"
+
 exit $result
